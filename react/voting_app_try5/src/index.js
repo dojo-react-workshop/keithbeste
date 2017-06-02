@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom';
 // console.log ('hey');
 
 const App = () => {
-	return <div></div>
+	return <div>hello world</div>
 }
 
 ReactDOM.render(<App />, document.getElementById('root'))
