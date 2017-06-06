@@ -9,15 +9,19 @@ class App extends React.Component {
         return (
             <div>
                 <button className="addButton" onClick={() => this.setState({ count: this.state.count + 1 })}>Add Counter</button>
-             i  <CounterList numCounters={this.state.count}/>
+               <CounterList numCounters={this.state.count}/>
             </div>
         )
     }
 }
 
+onClick={()=>{this.setState({count: this.state.count + 1})
+
+
 const CounterList = (props) => {
     const numOfCounters = props.numCounters;
     const countersToAdd = [];
+    
     for(let i = 0; i < numOfCounters; i++){
         countersToAdd.push(<Counter key={i}/>)
     }
@@ -29,7 +33,7 @@ const CounterList = (props) => {
 }
 
 class Counter extends React.Component {
-    state = { count: 0 }
+    state = { count:0 }
     render() {
         return (
             <div className="counter">
